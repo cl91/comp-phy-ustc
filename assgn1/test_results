@@ -1,0 +1,128 @@
+randomz |<x^1> - 1/2| = 0.016480178151, nsteps = 10
+randomz |<x^1> - 1/2| = 0.006908044879, nsteps = 100
+randomz |<x^1> - 1/2| = 0.008048199694, nsteps = 1000
+randomz |<x^1> - 1/2| = 0.000988124289, nsteps = 10000
+randomz |<x^1> - 1/2| = 0.000582568909, nsteps = 100000
+randomz |<x^1> - 1/2| = 0.000563871230, nsteps = 1000000
+randomz |<x^1> - 1/2| = 0.000086480593, nsteps = 10000000
+
+randomz |<x^2> - 1/3| = 0.171179919138, nsteps = 10
+randomz |<x^2> - 1/3| = 0.009227837169, nsteps = 100
+randomz |<x^2> - 1/3| = 0.003417101020, nsteps = 1000
+randomz |<x^2> - 1/3| = 0.005437395046, nsteps = 10000
+randomz |<x^2> - 1/3| = 0.000190458291, nsteps = 100000
+randomz |<x^2> - 1/3| = 0.000154240104, nsteps = 1000000
+randomz |<x^2> - 1/3| = 0.000151709895, nsteps = 10000000
+
+randomz |<x^3> - 1/4| = 0.049067486530, nsteps = 10
+randomz |<x^3> - 1/4| = 0.028931923723, nsteps = 100
+randomz |<x^3> - 1/4| = 0.004473419847, nsteps = 1000
+randomz |<x^3> - 1/4| = 0.003021797118, nsteps = 10000
+randomz |<x^3> - 1/4| = 0.000214740439, nsteps = 100000
+randomz |<x^3> - 1/4| = 0.000352363748, nsteps = 1000000
+randomz |<x^3> - 1/4| = 0.000166784740, nsteps = 10000000
+
+randomz |<x^4> - 1/5| = 0.104728081082, nsteps = 10
+randomz |<x^4> - 1/5| = 0.043544471400, nsteps = 100
+randomz |<x^4> - 1/5| = 0.016972674207, nsteps = 1000
+randomz |<x^4> - 1/5| = 0.000159776592, nsteps = 10000
+randomz |<x^4> - 1/5| = 0.000602115635, nsteps = 100000
+randomz |<x^4> - 1/5| = 0.000241616001, nsteps = 1000000
+randomz |<x^4> - 1/5| = 0.000330707145, nsteps = 10000000
+
+rand_schrage |<x^1> - 1/2| = 0.160715305088, nsteps = 10
+rand_schrage |<x^1> - 1/2| = 0.003724213100, nsteps = 100
+rand_schrage |<x^1> - 1/2| = 0.006987856796, nsteps = 1000
+rand_schrage |<x^1> - 1/2| = 0.003664273923, nsteps = 10000
+rand_schrage |<x^1> - 1/2| = 0.001271172285, nsteps = 100000
+rand_schrage |<x^1> - 1/2| = 0.000554020586, nsteps = 1000000
+rand_schrage |<x^1> - 1/2| = 0.000011276989, nsteps = 10000000
+
+rand_schrage |<x^2> - 1/3| = 0.161339661671, nsteps = 10
+rand_schrage |<x^2> - 1/3| = 0.009717092355, nsteps = 100
+rand_schrage |<x^2> - 1/3| = 0.002266958917, nsteps = 1000
+rand_schrage |<x^2> - 1/3| = 0.002971701199, nsteps = 10000
+rand_schrage |<x^2> - 1/3| = 0.001123364056, nsteps = 100000
+rand_schrage |<x^2> - 1/3| = 0.000441058616, nsteps = 1000000
+rand_schrage |<x^2> - 1/3| = 0.000007964913, nsteps = 10000000
+
+rand_schrage |<x^3> - 1/4| = 0.145025773491, nsteps = 10
+rand_schrage |<x^3> - 1/4| = 0.015148420618, nsteps = 100
+rand_schrage |<x^3> - 1/4| = 0.000635184853, nsteps = 1000
+rand_schrage |<x^3> - 1/4| = 0.002025575922, nsteps = 10000
+rand_schrage |<x^3> - 1/4| = 0.000887407814, nsteps = 100000
+rand_schrage |<x^3> - 1/4| = 0.000316195116, nsteps = 1000000
+rand_schrage |<x^3> - 1/4| = 0.000007184140, nsteps = 10000000
+
+rand_schrage |<x^4> - 1/5| = 0.012271141707, nsteps = 10
+rand_schrage |<x^4> - 1/5| = 0.013645039074, nsteps = 100
+rand_schrage |<x^4> - 1/5| = 0.010707830685, nsteps = 1000
+rand_schrage |<x^4> - 1/5| = 0.002430082260, nsteps = 10000
+rand_schrage |<x^4> - 1/5| = 0.001155318253, nsteps = 100000
+rand_schrage |<x^4> - 1/5| = 0.000341189354, nsteps = 1000000
+rand_schrage |<x^4> - 1/5| = 0.000089808375, nsteps = 10000000
+
+randomz |C(1)| = 0.085253537880, nsteps = 10
+randomz |C(1)| = 0.053568517588, nsteps = 100
+randomz |C(1)| = 0.037705929690, nsteps = 1000
+randomz |C(1)| = 0.005562505276, nsteps = 10000
+randomz |C(1)| = 0.001013286189, nsteps = 100000
+randomz |C(1)| = 0.001973201992, nsteps = 1000000
+randomz |C(1)| = 0.003219570498, nsteps = 10000000
+
+randomz |C(2)| = 0.008981787867, nsteps = 10
+randomz |C(2)| = 0.129584475251, nsteps = 100
+randomz |C(2)| = 0.087556234491, nsteps = 1000
+randomz |C(2)| = 0.004422133970, nsteps = 10000
+randomz |C(2)| = 0.003130983358, nsteps = 100000
+randomz |C(2)| = 0.000908728776, nsteps = 1000000
+randomz |C(2)| = 0.000309218088, nsteps = 10000000
+
+randomz |C(3)| = 0.027883181609, nsteps = 10
+randomz |C(3)| = 0.066716047005, nsteps = 100
+randomz |C(3)| = 0.024079483336, nsteps = 1000
+randomz |C(3)| = 0.001280809779, nsteps = 10000
+randomz |C(3)| = 0.002457460871, nsteps = 100000
+randomz |C(3)| = 0.001270206855, nsteps = 1000000
+randomz |C(3)| = 0.000346669046, nsteps = 10000000
+
+randomz |C(4)| = 0.400153669253, nsteps = 10
+randomz |C(4)| = 0.058264972015, nsteps = 100
+randomz |C(4)| = 0.003028300685, nsteps = 1000
+randomz |C(4)| = 0.002832924591, nsteps = 10000
+randomz |C(4)| = 0.000478231218, nsteps = 100000
+randomz |C(4)| = 0.000297231794, nsteps = 1000000
+randomz |C(4)| = 0.000378215088, nsteps = 10000000
+
+rand_schrage |C(1)| = 2.668404460399, nsteps = 10
+rand_schrage |C(1)| = 0.013404534835, nsteps = 100
+rand_schrage |C(1)| = 0.010773022625, nsteps = 1000
+rand_schrage |C(1)| = 0.001498098548, nsteps = 10000
+rand_schrage |C(1)| = 0.001932079651, nsteps = 100000
+rand_schrage |C(1)| = 0.001580708483, nsteps = 1000000
+rand_schrage |C(1)| = 0.000269010159, nsteps = 10000000
+
+rand_schrage |C(2)| = 0.790830186148, nsteps = 10
+rand_schrage |C(2)| = 0.146958554394, nsteps = 100
+rand_schrage |C(2)| = 0.006591210281, nsteps = 1000
+rand_schrage |C(2)| = 0.005717789461, nsteps = 10000
+rand_schrage |C(2)| = 0.000054585016, nsteps = 100000
+rand_schrage |C(2)| = 0.000128020549, nsteps = 1000000
+rand_schrage |C(2)| = 0.000227618062, nsteps = 10000000
+
+rand_schrage |C(3)| = 4.236732007293, nsteps = 10
+rand_schrage |C(3)| = 0.020708528108, nsteps = 100
+rand_schrage |C(3)| = 0.014449203251, nsteps = 1000
+rand_schrage |C(3)| = 0.004089598052, nsteps = 10000
+rand_schrage |C(3)| = 0.001157495171, nsteps = 100000
+rand_schrage |C(3)| = 0.001570062599, nsteps = 1000000
+rand_schrage |C(3)| = 0.000128638367, nsteps = 10000000
+
+rand_schrage |C(4)| = 0.785379128940, nsteps = 10
+rand_schrage |C(4)| = 0.109554666696, nsteps = 100
+rand_schrage |C(4)| = 0.020759251862, nsteps = 1000
+rand_schrage |C(4)| = 0.014440225102, nsteps = 10000
+rand_schrage |C(4)| = 0.000341653381, nsteps = 100000
+rand_schrage |C(4)| = 0.001858447638, nsteps = 1000000
+rand_schrage |C(4)| = 0.000445088132, nsteps = 10000000
+

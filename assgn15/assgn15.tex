@@ -1,0 +1,42 @@
+\documentclass{ctexart}
+\begin{document}
+\title{计算物理作业15}
+\author{刘畅, PB09203226}
+\maketitle
+
+{\bf[作业15]}:推导三角格子点阵上座逾渗的重整化群变换表达式 $p' = R(p)$,其中端与端连接
+的条件是3个格点中的2个是占据态,求临界点 $p_c$ 与临界指数 $\nu$,与正确值相比较.
+
+\bigbreak
+应用实空间的重整化群标度变换的方法, 对题中三角格子点阵, 由于端与端连接
+的条件是3个格点中的2个是占据态, 故有4种形成逾渗通路的情形, 它们发生概率分别是
+$p^3$, $p^2(1-p)$, $p^2(1-p)$, $p^2(1-p)$, 因此
+\[
+R(p\mid b=2) = p^3+3p^2(1-p)
+\]
+解方程
+\[
+p = R(p \mid b=2)
+\]
+对 $p\neq0$, 有
+\[
+1=p^2+3p(1-p)=-2p^2+3p
+\]
+即
+\[
+(p-1)(2p-1)=0
+\]
+即解为 $p_0=0$, $p_1=\frac{1}{2}$, $p_2=1$. 中间那个就是临界点 $p_c = \frac{1}{2}$.
+\medbreak
+按书上的公式
+\[
+\lambda = \left.\frac{\partial R(p)}{\partial p}\right|_{p\to p_c}
+=6p_c-6p_c^2=\frac{3}{2}
+\]
+又由于是三角格点, $b=\sqrt{3}$, 按书上的临界指数公式 $\nu=\frac{\ln b}{\ln \lambda}
+\approx 1.3547$.
+\medbreak
+书上的表给出 $p_c=\frac{1}{2}$, $\nu=\frac{4}{3}\approx1.3333$, 和前面的计算是
+一致的.
+
+\end{document}

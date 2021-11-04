@@ -1,0 +1,112 @@
+\documentclass{ctexart}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\def\makeinnocent#1{\catcode`#1=12}
+\def\typeverb#1{{\obeylines\obeyspaces%
+\tt\let\do=\makeinnocent \dospecials #1 }}
+\def\inputverbatim#1{\typeverb{\input #1}}
+\begin{document}
+\title{计算物理作业 2}
+\author{刘畅, PB09203226}
+\maketitle
+
+{\bf 作业 2}\quad 角斗士可以在3扇门中作一选择,
+1扇门后是美女, 他因此获得自由并成婚, 另外2扇
+后面是头狮子。当角斗士选定其一后,皇帝(他知道每扇门的安排)将打开另外两扇
+门之一给角斗士看,其结果是狮子。然后他问角斗士是否要改变他的最初选择,换成
+另外一扇没打开的门。请用抽样方法说明,改变选择对角斗士是否有利。
+
+\section{从概率论上分析}
+我们先假定角斗士没有改变他的选择. 这样他有 $\frac{1}{3}$ 的概率选到美女,
+$\frac{2}{3}$ 的概率选到狮子. 如果他选到美女, 那么他将获得自由.
+如果他选到狮子, 那么他将面对狮子. 这样他获得自由的概率是 $\frac{1}{3}$.
+
+我们再假定角斗士改变了他的选择. 如果他选到美女, 那么改变选择后将面对狮子.
+如果他选到狮子, 这样由于另一扇门中是美女, 他将获得自由. 这样他获得自由的
+概率是 $\frac{2}{3}$. 因此改变选择对角斗士有利.
+
+\section{编程来模拟这个过程}
+用计算机编程可以模拟这个问题. 基本的思路就是利用随机数发生器, 模拟题中的
+各个过程 (程序见 \verb|main.c|). 首先我们需要一个数组来储存门后面到底
+是美女还是狮子, 也就是这个系统的构形. 因此定义:
+\begin{verbatim}
+bool is_girl[NR_DOORS];	/* stores the configration
+                           of lions and girl */
+\end{verbatim}
+其中 \verb|NR_DOORS| 是门的个数 (3 个).
+
+然后我们需要一个例程来随机地生成这样一个构形:
+\begin{verbatim}
+/* initialize the configuration of lions and girl */
+void place_lions_and_girl(bool *is_girl)
+{
+    int i;
+
+    for (i = 0; i < NR_DOORS; i++) {
+        is_girl[i] = false;
+    }
+    is_girl[rand() / (RAND_MAX / NR_DOORS)] = true;
+}
+\end{verbatim}
+这个例程首先将 \verb|is_girl[]| 初始化为 \verb|false|, 然后随机选择
+其中的一个设置为 \verb|true|. 这表示这个门后面是美女, 其他门后面是
+狮子.
+
+接着我们要让角斗士作出选择:
+\begin{verbatim}
+/* the gladiator makes his choice */
+int gladiator_chooses_the_door(void)
+{
+    return rand() / (RAND_MAX / NR_DOORS);
+}
+\end{verbatim}
+
+按照题目中的过程, 接下来是皇帝打开装有狮子的门. 但是这个过程在我们的计算机
+模拟中不需要用到. 程序文件 (\verb|main.c|) 中的例程
+\verb|emperor_opens_the_door_with_lion| 模拟了这一过程.
+
+最后我们要确定到底角斗士获得自由还是面对狮子:
+\begin{verbatim}
+/* let's see what the gladiator will get */
+bool gladiator_gets_the_girl(bool no_change,
+                             int door_glad, bool *is_girl)
+{
+    if (no_change) {    /* if the gladiator
+                           retains his choice */
+        return is_girl[door_glad];
+    } else {        /* if the gladiator changes his mind */
+        return !is_girl[door_glad];
+    }
+}
+\end{verbatim}
+如果角斗士不改变他的选择, 那么就返回他选择的门中是否有美女. 如果他改变选择,
+就返回另一个门中是否有美女 (等价于他选择的门中是否有狮子).
+
+我们模拟运行上面的过程很多次 ($\ge 1000$ 次), 统计两种情况下角斗士获得自由
+的次数, 打印到屏幕上. 例如, 对不改变选择的情况:
+\begin{verbatim}
+/* compute the frequency the gladiator got the girl
+   if he retains his choice */
+nr_got_girl = 0;
+for (i = 0; i < NR_STEPS; i++) {
+    place_lions_and_girl(is_girl);
+    door_gladiator = gladiator_chooses_the_door();
+    if (gladiator_gets_the_girl(true, door_gladiator, is_girl))
+        nr_got_girl++;
+}
+printf("If the gladiator retains his choice:\n"
+       "    Number of steps: %d\n"
+       "    Number of instances he got the girl: %d\n"
+       "    Frequency: %f\n\n", NR_STEPS, nr_got_girl,
+       (double) nr_got_girl / (double) NR_STEPS);
+\end{verbatim}
+
+\section{模拟结果}
+程序运行结果是: (每次都不同)
+
+\inputverbatim{results}
+
+可以看到和上面分析的结果非常接近. 不改变选择的话, 概率在 $\frac{1}{3}$
+左右, 改变选择, 概率在 $\frac{2}{3}$ 左右. 因此改变选择有利.
+
+\end{document}
